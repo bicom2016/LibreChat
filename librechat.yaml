@@ -280,13 +280,13 @@ endpoints:
       apiKey: "xai-GCbNH6WpKBv0tKe6AuXoASkWcvXib6iQCbPJRenC4HqERhoJ3uZ5BgN7PmpKsKC4n0TqMev74z9oPQH4"
       baseURL: "https://api.x.ai/v1"
       models:
-        default: ["grok-beta"]
+        default: ["grok-3-latest"]
         fetch: false
       titleConvo: true
       titleMethod: "completion"
-      titleModel: "grok-beta"
+      titleModel: "grok-3-latest"
       summarize: false
-      summaryModel: "grok-beta"
+      summaryModel: "grok-3-latest"
       forcePrompt: false
       modelDisplayLabel: "Grok"
 # fileConfig:
