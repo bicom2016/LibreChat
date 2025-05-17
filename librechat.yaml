@@ -276,6 +276,19 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: 'Portkey'
       iconURL: https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/rjqy7ghvjoiu4cd1xjbf
+    - name: "xai"
+      apiKey: "xai-GCbNH6WpKBv0tKe6AuXoASkWcvXib6iQCbPJRenC4HqERhoJ3uZ5BgN7PmpKsKC4n0TqMev74z9oPQH4"
+      baseURL: "https://api.x.ai/v1"
+      models:
+        default: ["grok-beta"]
+        fetch: false
+      titleConvo: true
+      titleMethod: "completion"
+      titleModel: "grok-beta"
+      summarize: false
+      summaryModel: "grok-beta"
+      forcePrompt: false
+      modelDisplayLabel: "Grok"
 # fileConfig:
 #   endpoints:
 #     assistants:
