@@ -170,7 +170,7 @@ endpoints:
     # (optional) Models that support retrieval, will default to latest known OpenAI models that support the feature
     retrievalModels: ["gpt-4-turbo-preview"]
     # (optional) Assistant Capabilities available to all users. Omit the ones you wish to exclude. Defaults to list below.
-    capabilities: ["execute_code", "file_search", "actions", "tools", "artifacts", "ocr", "chain", "image_vision", "retrieval"]
+    capabilities: ["code_interpreter", "image_vision", "retrieval", "actions", "tools"]
   agents:
     # (optional) Default recursion depth for agents, defaults to 25
     recursionLimit: 50
@@ -179,7 +179,7 @@ endpoints:
     # (optional) Disable the builder interface for agents
     disableBuilder: false
     # (optional) Agent Capabilities available to all users. Omit the ones you wish to exclude. Defaults to list below.
-    capabilities: ["execute_code", "file_search", "actions", "tools", "artifacts", "ocr", "chain", "image_vision", "retrieval"]
+    capabilities: ["execute_code", "file_search", "actions", "tools", "artifacts", "ocr", "chain"]
   custom:
     # APIpie
     # https://apipie.ai/dashboard/
@@ -774,7 +774,7 @@ endpoints:
       dropParams:
         - "user"
 
-    # GitHub 
+    # GitHub
     - name: "Github Models"
       iconURL: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png
       apiKey: "${GITHUB_TOKEN}"
@@ -1292,7 +1292,7 @@ endpoints:
       titleModel: "current_model"
       modelDisplayLabel: "NanoGPT"
 
-    # NVIDIA         
+    # NVIDIA
     # https://build.nvidia.com/explore/discover
     - name: "Nvidia"
       apiKey: "${NVIDIA_API_KEY}"
@@ -2106,7 +2106,7 @@ endpoints:
       summarize: false
       summaryModel: "grok-beta"
       forcePrompt: false
-      modelDisplayLabel: "Grok"  
+      modelDisplayLabel: "Grok"
 
 
 fileConfig:
