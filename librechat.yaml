@@ -163,7 +163,7 @@ endpoints:
     pollIntervalMs: 3000  # Polling interval for checking assistant updates
     timeoutMs: 180000  # Timeout for assistant operations
     # Should only be one or the other, either `supportedIds` or `excludedIds`
-    supportedIds: ["asst_supportedAssistantId1", "asst_supportedAssistantId2"]
+    supportedIds: ["asst_IHupwkqSeJ2G5G4DTOJIVjSB", "asst_supportedAssistantId2"]
     # excludedIds: ["asst_excludedAssistantId"]
     # Only show assistants that the user created or that were created externally (e.g. in Assistants playground).
     # privateAssistants: false # Does not work with `supportedIds` or `excludedIds`
